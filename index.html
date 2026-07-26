@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Formula Library - Interface</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <h1>Physics Formula Library</h1>
+
+    <div class="card">
+
+        <label for="formulaSelect">Choose Formula</label>
+
+        <select id="formulaSelect">
+
+            <option value="final_velocity">
+                Final Velocity (u + a t)
+            </option>
+
+            <option value="displacement">
+                Displacement (ut + 0.5at²)
+            </option>
+
+            <option value="force">
+                Force (F = ma)
+            </option>
+
+            <option value="kinetic_energy">
+                Kinetic Energy (½mv²)
+            </option>
+
+            <option value="voltage">
+                Voltage (V = IR)
+            </option>
+
+        </select>
+
+        <div id="inputs" style="margin-top:12px;"></div>
+
+        <div style="margin-top:12px;display:flex;gap:8px;">
+
+            <button id="calcBtn" class="btn-primary">
+                Calculate
+            </button>
+
+            <button id="clearBtn" class="btn-ghost">
+                Clear
+            </button>
+
+        </div>
+
+        <div id="result"
+            style="margin-top:12px;font-weight:600;">
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <div class="row" style="justify-content:space-between;">
+
+            <div>
+
+                <strong>History</strong>
+
+                <div class="small">
+                    (most recent first)
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <button id="undoBtn" class="btn-ghost">
+                    Undo
+                </button>
+
+                <button id="redoBtn" class="btn-ghost">
+                    Redo
+                </button>
+
+                <button id="clearHistoryBtn" class="btn-ghost">
+                    Clear
+                </button>
+
+            </div>
+
+        </div>
+
+        <div id="historyList"
+            style="margin-top:12px;max-height:320px;overflow:auto;">
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

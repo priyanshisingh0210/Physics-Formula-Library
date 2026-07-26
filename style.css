@@ -1,0 +1,153 @@
+/* ====== Modern UI Styling ====== */
+
+body {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    background: url('https://i.pinimg.com/736x/c6/54/f7/c654f7afd44349ceeb6dcbdfe14c69a2.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+    color: #222;
+}
+
+.overlay {
+    background-color: rgba(182,214,251,0.871);
+
+    min-height:100vh;
+
+    padding:40px 16px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+h1 {
+
+    font-size:1.8rem;
+    margin-bottom:.3rem;
+    text-align:center;
+}
+
+p.small {
+
+    font-size:.9rem;
+    color:#444;
+    text-align:center;
+    margin-bottom:24px;
+}
+
+.card {
+
+    border-radius:16px;
+    padding:16px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+
+    background:rgba(255,255,255,.9);
+
+    margin:12px 0;
+
+    backdrop-filter:blur(6px);
+
+    width:100%;
+    max-width:600px;
+}
+
+label {
+
+    display:block;
+
+    font-size:.9rem;
+
+    margin:6px 0 4px;
+}
+
+input[type=number],
+select{
+
+    width:100%;
+
+    padding:10px;
+
+    box-sizing:border-box;
+
+    border-radius:8px;
+
+    border:1px solid #ccc;
+
+    font-size:1rem;
+}
+
+button{
+
+    padding:10px 14px;
+
+    border-radius:8px;
+
+    border:0;
+
+    cursor:pointer;
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+    transition:all .2s ease;
+}
+
+.btn-primary{
+
+    background:linear-gradient(135deg,#2563eb,#3b82f6);
+
+    color:white;
+}
+
+.btn-primary:hover{
+
+    transform:scale(1.05);
+}
+
+.btn-ghost{
+
+    background:transparent;
+
+    border:1px solid #bbb;
+
+    color:#333;
+}
+
+.btn-ghost:hover{
+
+    background:rgba(0,0,0,.05);
+}
+
+.row{
+
+    display:flex;
+
+    gap:8px;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+}
+
+.history-item{
+
+    padding:8px 10px;
+
+    border-radius:8px;
+
+    background:#f8f8f8;
+
+    margin-bottom:8px;
+}
+
+.small{
+
+    font-size:.85rem;
+
+    color:#555;
+}
